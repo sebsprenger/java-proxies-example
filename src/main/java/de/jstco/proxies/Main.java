@@ -14,27 +14,27 @@ public class Main {
     public static void main(String[] args) {
 
         Something sth1 = new SomethingImpl();
-        System.out.println(sth1.doSomething("Hello World!"));
+        sth1.doSomething("Hello World!");
 
         System.out.println(LINE);
 
         Something sth2 = new ClassicProxy(new SomethingImpl());
-        System.out.println(sth2.doSomething("Hello World!"));
+        sth2.doSomething("Hello World!");
 
         System.out.println(LINE);
 
         Something sth3 = new ExtensionProxy();
-        System.out.println(sth3.doSomething("Hello World!"));
+        sth3.doSomething("Hello World!");
 
         System.out.println(LINE);
 
         Something sth4 = JdkProxy.newProxy(Something.class, new SomethingImpl());
-        System.out.println(sth4.doSomething("Hello World!"));
+        sth4.doSomething("Hello World!");
 
         System.out.println(LINE);
 
         Something sth5 = CglibProxy.newProxy(Something.class, new SomethingImpl());
-        System.out.println(sth5.doSomething("Hello World!"));
+        sth5.doSomething("Hello World!");
     }
 
 }
