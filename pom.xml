@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.jstco</groupId>
-    <artifactId>proxies</artifactId>
+    <artifactId>java-proxies-example</artifactId>
     <version>0.0.1</version>
 
     <properties>
